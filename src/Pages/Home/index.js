@@ -43,6 +43,7 @@ export function Home() {
             <h2>Ops! Ainda não temos recomendações :(</h2>
             <img src={michael} alt="Disapointed Michael Scott" />
           </div>
+        
         )}
 
         <h2 className={style.sectionTitle}>Confira estas recomendações! </h2>
