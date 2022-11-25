@@ -7,7 +7,6 @@ import axios from "axios";
 import michael from "../../images/michael-scott.webp"
 
 
-
 export function Home() {
 
   const [filmes, setFilmes] = useState([]);
