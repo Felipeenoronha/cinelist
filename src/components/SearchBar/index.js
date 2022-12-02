@@ -28,6 +28,10 @@ export function SearchBar(props) {
       setOpen(false);
    };
 
+   // const cancelDropdown = () => {
+   //    setOpen(false);
+   // }
+
 
    useEffect(() => {
       async function fetchMovies() {
@@ -82,13 +86,14 @@ export function SearchBar(props) {
                placeholder="ex: senhor dos anéis"
             />
 
-            {!open ? null :
-               (
-                  <div className={style.dropdown}>
+            
 
+            {!open ? null :
+
+                  <div className={style.dropdown}>
                      <ul className={style.dropdownUl}>
                         {movies.map((currentElement) => {
-                           console.log(currentElement.isAdd);
+                           
                            return (
                               <li className={style.dropdownLi} key={currentElement.id}>
                                  <strong>{currentElement.title} </strong>
@@ -103,7 +108,7 @@ export function SearchBar(props) {
                         })}
                      </ul>
                   </div>
-               )}
+            }
 
 
             <div className={style.cardsDisplay}>
