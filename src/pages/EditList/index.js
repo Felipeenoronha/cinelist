@@ -46,7 +46,7 @@ const navigate = useNavigate();
       async function fetchNote() {
         try {
 
-          const response = await axios.get(`https:/ironrest.cyclic.app/CineList/${params.id}`);
+          const response = await axios.get(`https://ironrest.cyclic.app/CineList/${params.id}`);
    
           setForm(response.data);
 
